@@ -1,7 +1,7 @@
 import { Octokit, App } from "octokit";
 import 'dotenv/config';
 
-const octokit = new Octokit({ auth: process.env.GITHUB_AUTH });
+const octokit = new Octokit({ auth: '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' });
 
 let response = await octokit.request('POST /repos/adith90/automation/pulls', {
   owner: 'adith90',
